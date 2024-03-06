@@ -1,5 +1,5 @@
-function WeatherCard() { // TODO Eventually replace dummy text
-  return <>
+function TemperatureCard() { // TODO Eventually replace dummy text
+  return (
     <div className="m-8 p-4 rounded-xl bg-gray-950 outline outline-1 outline-slate-500 lg:w-96 ">
       <div className="flex justify-between text-lg font-semibold">
         <span>Monday</span>
@@ -11,7 +11,7 @@ function WeatherCard() { // TODO Eventually replace dummy text
         <span>H: 51°F L: 30°F</span>
       </div>
     </div>
-  </>;
+  );
 }
 
-export default WeatherCard;
+export default TemperatureCard;
