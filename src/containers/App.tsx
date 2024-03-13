@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import AppHeader from "../components/AppHeader";
 import Card from "../components/Card";
 import CurrentTemperature from "../components/CurrentTemperature";
