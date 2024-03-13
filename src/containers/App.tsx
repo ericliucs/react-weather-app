@@ -1,16 +1,18 @@
 import React from 'react';
 import './App.css';
-import Card from "../../../../../../../../Users/alter/OneDrive/Desktop/components/Card";
-import CurrentTemperature from "../../../../../../../../Users/alter/OneDrive/Desktop/components/CurrentTemperature";
-import WeekForecast from "../../../../../../../../Users/alter/OneDrive/Desktop/components/WeekForecast";
+import AppHeader from "../components/AppHeader";
+import Card from "../components/Card";
+import CurrentTemperature from "../components/CurrentTemperature";
+import WeekForecast from "../components/WeekForecast";
 
 function App() {
   return <>
-    <div className="flex">
-      <Card tailwindClasses={"lg:w-1/4"}>
+    <AppHeader/>
+    <div className={"flex flex-wrap sm:flex-nowrap"}>
+      <Card tailwindClasses={"basis-full sm:basis-1/4"}>
         <CurrentTemperature/>
       </Card>
-      <Card tailwindClasses={"lg:w-3/4"}>
+      <Card tailwindClasses={"basis-full sm:basis-3/4"}>
         <WeekForecast/>
       </Card>
     </div>
