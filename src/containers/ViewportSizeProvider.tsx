@@ -4,7 +4,7 @@ interface ViewportSizeProviderProps {
   readonly children: ReactElement;
 }
 
-const viewportContext = createContext({});
+const ViewportContext = createContext({});
 
 function ViewportSizeProvider({ children }: ViewportSizeProviderProps) {
   const [width, setWidth] = useState(window.innerWidth);
@@ -20,9 +20,9 @@ function ViewportSizeProvider({ children }: ViewportSizeProviderProps) {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-  return <viewportContext.Provider value={{width, height}}>
+  return <ViewportContext.Provider value={{width, height}}>
     {children}
-  </viewportContext.Provider>
+  </ViewportContext.Provider>
 }
 
 export default ViewportSizeProvider;
