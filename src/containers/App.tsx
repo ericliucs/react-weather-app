@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 import AppHeader from "../components/AppHeader";
 import Card from "../components/Card";
@@ -6,6 +6,8 @@ import CurrentTemperature from "../components/CurrentTemperature";
 import WeekForecast from "../components/WeekForecast";
 
 function App() {
+  const [weatherData, setWeatherData] = useState();
+
   return <>
     <AppHeader/>
     <div className={"flex flex-wrap sm:flex-nowrap"}>
